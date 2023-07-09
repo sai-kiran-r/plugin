@@ -1,0 +1,22 @@
+{
+    "name": "Chrome Extension V1",
+    "description": "To avoid time waste during Lunch & Dinner",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://www.google.com/*"
+    ]
+}
